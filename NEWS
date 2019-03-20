@@ -1,0 +1,16 @@
+CHANGES IN VERSION 1.1.1
+-------------------------
+
+NEW FEATURES
+
+    o Added Citation file
+    o Added citation reference to documentation
+    o Corrected typo in documentation
+
+CHANGES IN VERSION 0.99.0
+-------------------------
+
+NEW FEATURES
+
+    o first submission to Bioc-devel
+
