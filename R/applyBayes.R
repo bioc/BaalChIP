@@ -1,6 +1,8 @@
 #BaalChIP: functions to apply bayesian framework for allele-specific detection
 #Ines de Santiago, Wei Liu, Ke Yuan, Florian Markowetz
 
+globalVariables("SNP_id")
+
 ############### SNP_hit_Peaks: sum read counts ##################
 
 

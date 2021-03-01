@@ -105,9 +105,9 @@ BaalChIP <- function(samplesheet = NULL, hets = NULL, CorrectWithgDNA = list()) 
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{alleleCounts} containing a list of GRanges objects.
 #' @seealso \code{\link{BaalChIP.get}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'
@@ -162,9 +162,9 @@ setMethod(f = "alleleCounts", signature = "BaalChIP", function(.Object, min_base
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{alleleCounts} containing a list of GRanges objects that pass filters.
 #' @seealso \code{\link{BaalChIP.get}}, \code{\link{plotQC}}, \code{\link{summaryQC}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'data('blacklist_hg19')
@@ -241,9 +241,9 @@ setMethod(f = "QCfilter", signature = "BaalChIP", function(.Object, RegionsToFil
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{alleleCounts} containing a list of GRanges objects that pass filters.
 #' @seealso \code{\link{BaalChIP.get}}, \code{\link{plotQC}}, \code{\link{summaryQC}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'skipScriptRun=TRUE #For demonstration purposes only (read details in vignette)
@@ -315,9 +315,9 @@ setMethod(f = "filterIntbias", signature = "BaalChIP", function(.Object, simul_o
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{mergedCounts} containing a data.frame of merged samples per group.
 #' @seealso \code{\link{BaalChIP.get}}, \code{\link{plotQC}}, \code{\link{summaryQC}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'data('blacklist_hg19')
@@ -369,9 +369,9 @@ setMethod(f = "mergePerGroup", signature = "BaalChIP", function(.Object) {
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{mergedCounts} containing a data.frame of merged samples per group with variants that pass the filter.
 #' @seealso \code{\link{BaalChIP.get}}, \code{\link{plotQC}}, \code{\link{summaryQC}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'data('blacklist_hg19')
@@ -446,9 +446,9 @@ setMethod(f = "filter1allele", signature = "BaalChIP", function(.Object) {
 #' @return An object of the \code{\link{BaalChIP}} class.
 #' @seealso \code{\link{summaryQC}}, \code{\link{plotQC}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- BaalChIP.run(res, cores=2)
 #'
@@ -529,9 +529,9 @@ setMethod(f = "BaalChIP.run", signature = "BaalChIP", function(.Object, cores = 
 #' @return An updated \code{\link{BaalChIP}} object with the slot \code{ASB} containing variants identified as allele-specific.
 #' @seealso \code{\link{summaryASB}}, \code{\link{BaalChIP.report}}
 #' @examples
-#'setwd(system.file('test',package='BaalChIP'))
-#'samplesheet <- 'exampleChIP.tsv'
-#'hets <- c('MCF7'='MCF7_hetSNP.txt', 'GM12891'='GM12891_hetSNP.txt')
+#'samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP") 
+#'hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+#'          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 #'res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 #'res <- alleleCounts(res, min_base_quality=10, min_mapq=15)
 #'res <- mergePerGroup(res)

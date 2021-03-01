@@ -36,13 +36,12 @@ BaalChIP(samplesheet = NULL, hets = NULL, CorrectWithgDNA = list())
 This S4 class includes a series of methods for detecting allele-specific events from multiple ChIP-seq datasets.
 }
 \examples{
-setwd(system.file("test",package="BaalChIP"))
-samplesheet <- "exampleChIP.tsv"
-hets <- c("MCF7"="MCF7_hetSNP.txt", "GM12891"="GM12891_hetSNP.txt")
+samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
+hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
+         "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
 res <- new("BaalChIP", samplesheet=samplesheet, hets=hets)
 res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 }
 \author{
 Ines de Santiago, Wei Liu, Ke Yuan, Florian Markowetz
 }
-
