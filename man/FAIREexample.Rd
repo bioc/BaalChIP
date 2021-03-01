@@ -4,13 +4,7 @@
 \name{FAIREexample}
 \alias{FAIREexample}
 \title{FAIREexample example dataset}
-<<<<<<< HEAD
-\format{
-A BaalChIP-class object
-}
-=======
 \format{A BaalChIP-class object}
->>>>>>> upstream/master
 \source{
 Downloaded from supplementary data of BaalChIP paper
 }
@@ -21,7 +15,3 @@ FAIREexample example dataset
 Ines de Santiago \email{ines.desantiago@cruk.cam.ac.uk}
 }
 \keyword{FAIREexample}
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master

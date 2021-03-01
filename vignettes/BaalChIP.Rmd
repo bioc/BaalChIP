@@ -293,10 +293,6 @@ The default `run_simulations.sh` script can be found here:
 This is how the command to run this filtering step would look like: 
 
 ```{r, eval=FALSE, message=FALSE, error=FALSE, warning=FALSE}
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 res <- filterIntbias(res, 
                      simul_output="directory_name", 
                      tmpfile_prefix="prefix_name", 
