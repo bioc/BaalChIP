@@ -1,6 +1,10 @@
 #BaalChIP: plot funtions
 #Ines de Santiago, Wei Liu, Ke Yuan, Florian Markowetz
+<<<<<<< HEAD
 globalVariables(c("cellname", "coltype", "perc_right", "readslen", "value", "value.mean", "variable"))
+=======
+
+>>>>>>> upstream/master
 
 plot.simul <- function(simulation_stats, plot=TRUE) {
     #suppressPackageStartupMessages(require(ggplot2))

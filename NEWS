@@ -6,7 +6,10 @@ NEW FEATURES
     o Added Citation file
     o Added citation reference to documentation
     o Corrected typo in documentation
+<<<<<<< HEAD
     
+=======
+>>>>>>> upstream/master
 
 CHANGES IN VERSION 0.99.0
 -------------------------

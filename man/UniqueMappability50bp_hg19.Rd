@@ -4,9 +4,13 @@
 \name{UniqueMappability50bp_hg19}
 \alias{UniqueMappability50bp_hg19}
 \title{Genomic regions of unique mappability}
+<<<<<<< HEAD
 \format{
 A GRanges object of 9831690 ranges.
 }
+=======
+\format{A GRanges object of 9831690 ranges.}
+>>>>>>> upstream/master
 \source{
 Downloaded from \url{http://hgdownload.cse.ucsc.edu/gbdb/hg19/bbi/wgEncodeCrgMapabilityAlign50mer.bw}.
 }
@@ -29,3 +33,7 @@ These regions are not applicable to longer reads (> 50bp).
 Ines de Santiago \email{ines.desantiago@cruk.cam.ac.uk}
 }
 \keyword{UniqueMappability50bp_hg19}
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master

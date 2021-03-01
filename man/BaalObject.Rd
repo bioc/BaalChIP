@@ -4,9 +4,13 @@
 \name{BaalObject}
 \alias{BaalObject}
 \title{BaalObject example dataset}
+<<<<<<< HEAD
 \format{
 A BaalChIP-class object
 }
+=======
+\format{A BaalChIP-class object}
+>>>>>>> upstream/master
 \description{
 BaalObject example dataset
 }
@@ -14,3 +18,7 @@ BaalObject example dataset
 Ines de Santiago \email{ines.desantiago@cruk.cam.ac.uk}
 }
 \keyword{BaalObject}
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master

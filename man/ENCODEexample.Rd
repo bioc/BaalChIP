@@ -4,9 +4,13 @@
 \name{ENCODEexample}
 \alias{ENCODEexample}
 \title{ENCODEexample example dataset}
+<<<<<<< HEAD
 \format{
 A BaalChIP-class object
 }
+=======
+\format{A BaalChIP-class object}
+>>>>>>> upstream/master
 \source{
 Downloaded from supplementary data of BaalChIP paper
 }
@@ -17,3 +21,7 @@ ENCODEexample example dataset
 Ines de Santiago \email{ines.desantiago@cruk.cam.ac.uk}
 }
 \keyword{ENCODEexample}
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
