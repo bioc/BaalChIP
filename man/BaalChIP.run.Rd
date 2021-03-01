@@ -29,7 +29,6 @@ This function is a wrapper of the following functions: \code{\link{alleleCounts}
 samplesheet <- system.file("test", "exampleChIP.tsv", package = "BaalChIP")  
 hets <- c("MCF7"= system.file("test", "MCF7_hetSNP.txt", package = "BaalChIP"), 
          "GM12891"= system.file("test", "GM12891_hetSNP.txt", package = "BaalChIP"))
-setwd(system.file('test',package='BaalChIP'))
 res <- BaalChIP(samplesheet=samplesheet, hets=hets)
 res <- BaalChIP.run(res, cores=2)
 
